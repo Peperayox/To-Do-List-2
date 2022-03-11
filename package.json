@@ -1,0 +1,24 @@
+{
+  "name": "to-do-list-2",
+  "version": "1.0.0",
+  "description": "To do list colab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Peperayox/To-Do-List-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Peperayox/To-Do-List-2/issues"
+  },
+  "homepage": "https://github.com/Peperayox/To-Do-List-2#readme",
+  "devDependencies": {
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
