@@ -1,0 +1,17 @@
+.category:hover {
+  background-color: darkcyan;
+}
+.delete-button:hover {
+  color: darkred;
+  cursor: pointer;
+}
+.fa-circle-plus:hover {
+  transition-duration: 0.4s;
+  transform: scale(1.8);
+  cursor: pointer;
+}
+.fa-github:hover {
+  transition-duration: 0.75s;
+  transform: rotate(720deg) scale(1.5);
+  cursor: pointer;
+}
