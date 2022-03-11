@@ -24,7 +24,7 @@
   </head>
   <body>
     <div class="left-container">
-      <h1>Tittle</h1>
+      <h1>To Do List</h1>
       <div class="category-container">
         <div class="category all">
           <div class="text">All</div>
@@ -52,28 +52,39 @@
       </footer>
     </div>
     <div class="right-container">
-      <h2>Deportes</h2>
+      <h2><u>Deportes</u></h2>
       <div class="items-container">
         <div class="item">
-          <input type="checkbox" />
-          <div class="text">bleachar lucas tennis</div>
-          <div class="date-container"><input type="date" /></div>
-          <i class="fa-solid fa-trash-can"></i>
-          <i class="fa-solid fa-pen-to-square"></i>
+          <div class="right-item">
+            <input type="checkbox" />
+            <div class="text">bleachar lucas tennis</div>
+          </div>
+          <div class="left-item">
+            <p class="date">05 feb 22</p>
+            <i class="fa-solid fa-trash-can"></i>
+            <i class="fa-solid fa-pen-to-square"></i>
+          </div>
         </div>
         <div class="item">
-          <input type="checkbox" />
-          <div class="text">bleachar lucas tennis</div>
-          <div class="date-container"><input type="date" /></div>
-          <i class="fa-solid fa-trash-can"></i>
-          <i class="fa-solid fa-pen-to-square"></i>
+          <div class="right-item">
+            <input type="checkbox" />
+            <div class="text">bleachar lucas tennis</div>
+          </div>
+          <div class="left-item">
+            <p class="date">05 feb 22</p>
+            <i class="fa-solid fa-trash-can"></i>
+            <i class="fa-solid fa-pen-to-square"></i>
+          </div>
         </div>
-        <div class="item"></div>
-        <div class="item"></div>
       </div>
-      <div class="add-item">
-        <i class="fa-solid fa-circle-plus"></i>
-        Add Item
+      <div class="item-input">
+        <form onsubmit="return false">
+          <div class="grid">
+            <input id="name" type="text" placeholder="Task description" required />
+            <input type="date" id="date" placeholder="1/1/2022">
+            <input type="submit" value="Add Task"></input>
+          </div>
+        </form>
       </div>
     </div>
   </body>
