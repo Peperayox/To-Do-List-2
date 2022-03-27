@@ -84,10 +84,30 @@ p {
 .add-item {
   width: var(--right-container-width);
 }
-.grid {
-  width: 65vw !important;
-  gap: 2vw !important;
+.item-input {
+  width: 65vw;
+  gap: 2vw;
 }
 h2 {
   margin-bottom: 4vw !important;
+}
+.grid {
+  display: flex;
+  gap: 1vw;
+  padding: 1vw;
+}
+
+.active-list {
+  background-color: darkcyan;
+}
+.text {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.all-tasks {
+  font-weight: 900;
+}
+.active-item {
+  background-color: rgb(61, 61, 61) !important;
 }

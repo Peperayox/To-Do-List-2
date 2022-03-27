@@ -25,67 +25,60 @@
   <body>
     <div class="left-container">
       <h1>To Do List</h1>
-      <div class="category-container">
-        <div class="category all">
-          <div class="text">All</div>
-        </div>
-        <div class="category">
-          <i class="fa-solid fa-list-check"></i>
-          <div class="text">deportes</div>
-          <div class="delete-button">
-            <i class="fa-solid fa-xmark"></i>
-          </div>
-        </div>
-        <div class="category">
-          <i class="fa-solid fa-list-check"></i>
-          <div class="text">chadwick</div>
-          <div class="delete-button">
-            <i class="fa-solid fa-xmark"></i>
-          </div>
-        </div>
+      <div class="category" data-all-tasks>
+        <div class="text all-tasks" data-list-text>All Tasks</div>
       </div>
-      <div class="add-category">
-        <i class="fa-solid fa-circle-plus"></i>
+      <div class="category-container" data-lists-container>
+        
       </div>
+      <form onsubmit="return false" data-list-form>
+        <div class="grid">
+          <input id="listName" type="text" placeholder="List name"  data-list-input   required />
+          <input id="CategorySubmit" type="submit" value="Add List"></input>
+        </div>
+      </form>
       <footer>
         <i class="fa-brands fa-github"></i>
       </footer>
     </div>
     <div class="right-container">
-      <h2><u>Deportes</u></h2>
-      <div class="items-container">
-        <div class="item">
-          <div class="right-item">
-            <input type="checkbox" />
-            <div class="text">bleachar lucas tennis</div>
-          </div>
-          <div class="left-item">
-            <p class="date">05 feb 22</p>
-            <i class="fa-solid fa-trash-can"></i>
-            <i class="fa-solid fa-pen-to-square"></i>
-          </div>
-        </div>
-        <div class="item">
-          <div class="right-item">
-            <input type="checkbox" />
-            <div class="text">bleachar lucas tennis</div>
-          </div>
-          <div class="left-item">
-            <p class="date">05 feb 22</p>
-            <i class="fa-solid fa-trash-can"></i>
-            <i class="fa-solid fa-pen-to-square"></i>
-          </div>
-        </div>
+      <h2 ><u data-list-title></u></h2>
+      <div class="items-container" data-tasks>
+
       </div>
-      <div class="item-input">
+      <div class="item-input" data-task-form>
         <form onsubmit="return false">
           <div class="grid">
-            <input id="name" type="text" placeholder="Task description" required />
-            <input type="date" id="date" placeholder="1/1/2022">
+            <input id="nameTask" type="text" placeholder="Task description" data-task-name-input required />
+            <input type="date" id="date" placeholder="1/1/2022" data-task-date-input required>
             <input type="submit" value="Add Task"></input>
           </div>
         </form>
       </div>
     </div>
+
+    <!-- templates -->
+
+    <template data-list-template>
+      <div class="category" data-list-container>
+        <i class="fa-solid fa-list-check"></i>
+        <div class="text" data-list-text></div>
+        <div class="delete-button" data-list-delete-button>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+    </template>
+    <template data-task-template>
+      <div class="item" data-task-div>
+        <div class="right-item">
+          <input type="checkbox" data-task-checkbox />
+          <div class="text" data-task-text></div>
+        </div>
+        <div class="left-item">
+          <p class="date" data-task-date></p>
+          <i class="fa-solid fa-trash-can" data-task-delete-button></i>
+        </div>
+      </div>
+    </template>
   </body>
 </html>
